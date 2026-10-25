@@ -81,3 +81,5 @@ Thumbs.db
 # JetBrains (RustRover / CLion)
 .idea/
 *.iml
+assets/.raw_originals/
+assets/Archive.zip
