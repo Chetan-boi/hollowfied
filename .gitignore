@@ -1,1 +1,83 @@
+# ==========================================
+# Rust & Cargo Build Artifacts
+# ==========================================
 /target
+Cargo.lock.bak
+**/*.rs.bk
+rustc-ice-*.txt
+*.pdb
+
+# Note: Do NOT ignore Cargo.lock if your game is a binary application.
+# Commit Cargo.lock for reproducible builds.
+
+# ==========================================
+# Graphics, Shaders & Engine Caches
+# ==========================================
+# Shader compilation dumps / intermediate spv files
+*.spv.tmp
+*.dxil
+dxcompiler.dll
+dxil.dll
+
+# Bevy asset caches / imported asset staging
+imported_assets/
+.web-asset-cache/
+compressed_texture_cache/
+
+# General engine & hot-reload dumps
+/debug/
+*.log
+
+# ==========================================
+# Raw DCC & Asset Source Files (Keep Git lean)
+# ==========================================
+# Blender autosaves and backups
+*.blend1
+*.blend2
+*.blend@*
+
+# Aseprite / Photoshop backups
+*.aseprite~*
+*.psd~*
+
+# Raw video / massive captures (use Git LFS or external storage instead)
+*.raw
+*.mp4
+*.mov
+*.wav.tmp
+
+# ==========================================
+# Saves, State & User Configs
+# ==========================================
+# Savegame states & runtime dumps
+saves/
+user_data/
+screenshots/
+**/screenshot-*.png
+
+# Local environment/engine overrides
+.env
+.env.*.local
+
+# ==========================================
+# OS & Editor Junk
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# VS Code / Cursor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# Neovim / Helix
+*.swp
+*.swo
+*~
+.netrwhist
+
+# JetBrains (RustRover / CLion)
+.idea/
+*.iml

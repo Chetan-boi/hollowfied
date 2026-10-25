@@ -1,0 +1,13 @@
+ASSET LICENSE & COPYRIGHT NOTICE
+
+All visual media, sprite sheets, pixel art frames, and animations contained within this directory are:
+
+Copyright (c) 2026 Chetan Sharma (Chetan-boi). All Rights Reserved.
+
+1. SCOPE & USE
+These assets are original fan creations created strictly for non-commercial, portfolio, and demonstration purposes. No license is granted to redistribute, sublicense, resell, repackage, or reuse these assets in any other project, game, or commercial product without explicit written permission.
+
+2. TRADEMARK & INTELLECTUAL PROPERTY NOTICE
+The character likenesses, designs, and visual concepts depicted in these assets are inspired by and derived from the series "Bleach". 
+
+All rights, titles, and intellectual property concerning "Bleach" and its characters are the sole property of Tite Kubo, Shueisha, and Studio Pierrot. This repository is an unaffiliated fan project and is neither endorsed nor sponsored by the copyright holders.
