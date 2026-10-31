@@ -1,0 +1,138 @@
+# ============================================================
+#  BLEACH: Hollowfied — Game Config
+#  Edit freely. Restart the game to apply changes.
+# ============================================================
+
+# ------------------------------------------------------------
+# WORLD
+# ------------------------------------------------------------
+[world]
+tile_size     = 32.0   # px per tile
+chunk_tiles   = 8      # tiles per chunk side (chunk = chunk_tiles * tile_size px)
+load_radius   = 2      # chunks loaded around player in each direction
+unload_dist   = 3.6    # chunk-distance at which chunks are unloaded
+
+# ------------------------------------------------------------
+# PLAYER — base stats (Bankai is the default start form)
+# ------------------------------------------------------------
+[player]
+base_speed          = 175.0   # px/s (Normal form multiplier = 1.0)
+bankai_speed_mult   = 1.25    # Bankai speed multiplier
+hollow_speed_mult   = 1.35    # Hollowfied speed multiplier
+
+hp_normal           = 100.0
+hp_bankai           = 150.0
+hp_hollow           = 200.0
+
+rei_normal          = 100.0
+rei_bankai          = 120.0
+rei_hollow          = 80.0
+
+rei_regen_rate      = 18.0    # Reiatsu regenerated per second
+
+# Shunpo (Flash Step)
+shunpo_speed        = 520.0
+shunpo_duration     = 0.14    # seconds of burst
+shunpo_cooldown     = 0.65
+shunpo_rei_cost     = 14.0
+
+# Getsuga Tensho
+attack_duration     = 0.32
+getsuga_speed       = 440.0
+getsuga_lifetime    = 0.52    # seconds before projectile despawns
+getsuga_rei_cost    = 16.0    # 0 in Hollowfied form (hardcoded)
+getsuga_dmg_normal  = 20.0
+getsuga_dmg_bankai  = 35.0
+getsuga_dmg_hollow  = 45.0
+
+# ------------------------------------------------------------
+# MENOS GRANDE
+# ------------------------------------------------------------
+[menos]
+health          = 120.0
+wander_speed    = 45.0
+chase_speed     = 80.0
+detect_radius   = 280.0   # px — wander → alert
+chase_radius    = 400.0   # px — keep chasing until this far
+attack_radius   = 300.0   # px — fires Cero when within this range
+cero_cooldown   = 3.5     # seconds between Ceros
+cero_damage     = 18.0
+
+spawn_chunk_pct = 0      # % of chunks that spawn Menos (0-100)
+min_per_chunk   = 0
+max_per_chunk   = 0       # actual count = min + rand % (max-min+1)
+
+# ------------------------------------------------------------
+# GRIMMJOW
+# ------------------------------------------------------------
+[grimmjow]
+health                  = 350.0
+speed                   = 120.0
+pantera_speed           = 180.0   # speed after Pantera trigger (<50% HP)
+pantera_hp_threshold    = 0.5     # fraction of max HP that triggers Pantera
+cero_cooldown           = 2.0
+cero_damage             = 22.0
+charge_cooldown         = 4.0
+charge_speed            = 400.0
+charge_duration         = 0.3     # seconds of charge dash
+charge_damage           = 25.0
+
+spawn_chunk_pct_x1000   = 30      # out of 1000 (= 3%)
+
+# ------------------------------------------------------------
+# ULQUIORRA
+# ------------------------------------------------------------
+[ulquiorra]
+health              = 400.0
+speed               = 90.0
+cero_cooldown       = 2.5
+cero_damage         = 25.0
+teleport_cooldown   = 2.0   # seconds between teleport hops
+teleport_distance   = 150.0 # px from player to land at
+
+spawn_chunk_pct_x1000 = 10  # out of 1000 (= 1%)
+
+# ------------------------------------------------------------
+# TOSEN
+# ------------------------------------------------------------
+[tosen]
+speed                 = 60.0
+spawn_chunk_pct_x1000 = 20   # out of 1000 (= 2%)
+
+# ------------------------------------------------------------
+# CERO (enemy projectile shared stats)
+# ------------------------------------------------------------
+[cero]
+speed    = 320.0
+lifetime = 0.9   # seconds
+
+# ------------------------------------------------------------
+# COMBAT FEEL
+# ------------------------------------------------------------
+[combat]
+invincibility_secs  = 0.8     # player iframes after getting hit
+
+# Screen Shake (trauma system)
+player_hit_trauma   = 0.4
+getsuga_fire_trauma = 0.1
+shunpo_trauma       = 0.05
+shake_max_offset_px = 12.0
+shake_max_rot_rad   = 0.04
+shake_decay_rate    = 1.2     # trauma lost per second
+
+# ------------------------------------------------------------
+# NEL COMPANION
+# ------------------------------------------------------------
+[nel]
+offset_x        = -48.0
+offset_y        = -32.0
+bounce_amplitude = 4.0    # px of vertical oscillation
+bounce_freq      = 4.0    # oscillations per second
+
+# ------------------------------------------------------------
+# DEATH & RESPAWN
+# ------------------------------------------------------------
+[death]
+fade_duration    = 1.5   # seconds to fade to black on death
+respawn_duration = 0.5   # seconds to fade back in after respawn
+
